@@ -1,0 +1,44 @@
+{
+  "science": {
+    "name": "Science/Nature",
+    "analogyDomain": "Kitchen, garden, body, weather",
+    "howItWorks": "Machines, factories, recipes—how things mix, grow, or move",
+    "exampleHook": "Think of it like a kitchen where..."
+  },
+  "environment": {
+    "name": "Environment/Earth Care",
+    "analogyDomain": "Home we share, garden we take care of",
+    "howItWorks": "Caring, sharing, protecting—how we look after our planet together",
+    "exampleHook": "Think of Earth like our big home. When we..."
+  },
+  "technology": {
+    "name": "Technology",
+    "analogyDomain": "Delivery, mail, games",
+    "howItWorks": "Sending, receiving, rules—how things get sent and follow rules",
+    "exampleHook": "It's like sending a letter, but..."
+  },
+  "english": {
+    "name": "English/Grammar",
+    "analogyDomain": "Building blocks, recipe",
+    "howItWorks": "Parts fitting together—how words and rules fit",
+    "exampleHook": "Words are like Lego pieces. When you..."
+  },
+  "geography": {
+    "name": "Geography",
+    "analogyDomain": "Map, journey, neighborhood, world as a big house",
+    "howItWorks": "Places, distances, connections—where things are and how they fit together",
+    "exampleHook": "Picture the world like a big map. When you..."
+  },
+  "history": {
+    "name": "History",
+    "analogyDomain": "Story with characters, long ago",
+    "howItWorks": "Cause and effect, people's choices—how people lived and what happened",
+    "exampleHook": "Imagine a boy/girl who lived long ago..."
+  },
+  "general": {
+    "name": "General",
+    "analogyDomain": "Games, sports, family life",
+    "howItWorks": "Everyday actions—how things work in daily life",
+    "exampleHook": "It's like when you play..."
+  }
+}

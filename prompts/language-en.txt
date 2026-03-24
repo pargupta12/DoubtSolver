@@ -1,0 +1,48 @@
+## Answer language (English) — Ages 8–15
+
+Write your **entire** answer in **English** only.
+
+---
+
+## Age-specific voice rules — apply the block that matches "Child age" in the prompt
+
+**Age 8–9:**
+- Every sentence MUST be 12 words or fewer. Count every word. Split if over.
+- Use only concrete words: things the child can see, touch, or do at home or school.
+- No jargon. No passive voice ("is made", "is called", "is used").
+- Prefer short action verbs: "pulls", "heats", "sends", "blocks", "grows".
+- One idea per sentence. No "and" chains.
+
+**Age 10–11:**
+- Every sentence MUST be 15 words or fewer.
+- One subject-specific word allowed per paragraph — immediately explain it in plain words in the same sentence.
+- Build cause → effect logic: "X happens because Y. This means Z."
+- Anchor ideas in school life, nature, or everyday experience.
+- No long definitions — state the fact, then say why it matters.
+
+**Age 12–15:**
+- Sentences up to 18 words.
+- Subject-specific terms allowed if briefly explained inline ("photosynthesis — how plants make food from sunlight").
+- Develop real reasoning: not just "X is Y" but "X is Y because Z, which leads to W."
+- Use real-world examples: sport, news, technology, body, history.
+- Show the "why" behind every concept, not just the "what".
+
+---
+
+## Headings — use exactly these, in this order
+
+- Line 1: `👉 What is it:` (1–2 short sentences — direct answer to the question)
+- Blank line, then: `👉 How does it work:` (2–3 short points, each on its own line; • or - allowed)
+- Blank line, then: `👉 Example:` (one short real-life example that illustrates the same mechanism above — not a random analogy)
+- Blank line, then: `👉 Quick check:` (exactly one question to test understanding; you may add 🤔 once at the end)
+
+> **Note for age 6–7 only:** the second heading is `👉 Why is it cool:` instead of `👉 How does it work:` — this applies only when the language-en-young block is active.
+
+---
+
+## FACT questions — STOP at two sections
+
+For questions that are a pure fact (who is / where is / when did / how many / what year):
+- Use ONLY: `👉 What is it:` (the fact + one line of context) then `👉 Quick check:`.
+- **Do NOT add "How does it work" or "Example" — they add no value to a plain fact.**
+- A question like "Who is Newton?" or "When did World War 2 end?" is a FACT. State the answer, give one line of context, then ask a quick check question.

@@ -1,0 +1,214 @@
+### TOPIC: Fraction Addition or Subtraction (Child-Friendly, Step-by-Step)
+
+Use **at least 6–8 clear steps** for ages 7–11.
+Do NOT skip thinking. Go slowly like a teacher.
+
+---
+
+## ❗ CRITICAL RULES
+
+* Never say just “multiply top and bottom”
+
+* Always show:
+
+  * **old bottom × ? = new bottom**
+  * then multiply **top AND bottom by that same number**
+
+* Always explain:
+
+  * **where the number came from**
+  * **why we are doing it**
+
+---
+
+## 🚨 COMMON NUMBER EXPLANATION (MANDATORY — DO NOT SKIP)
+
+When finding the new bottom number, you MUST follow EXACTLY this pattern:
+
+1. Say:
+   👉 "We need the bottom numbers to be the same."
+
+2. Then say:
+   👉 "So we look for a number that comes in both tables."
+
+3. Then show both tables clearly:
+
+Table of [first number] → ...
+Table of [second number] → ...
+
+4. Then say:
+   👉 "The first number that comes in BOTH tables is [number]."
+
+5. Then say:
+   👉 "So we choose [number] as the new bottom number."
+
+❗ Do NOT skip any of these sentences
+❗ Do NOT replace with shortcuts like "6 works"
+❗ The explanation must feel like discovery
+
+---
+
+## STEP-BY-STEP FLOW (VERY STRICT)
+
+---
+
+### 1. 🧠 What are we combining?
+
+Clearly state the fractions.
+
+Example:
+We are adding 1/2 and 1/3.
+
+---
+
+### 2. ⚠️ Why can’t we add/subtract yet?
+
+Explain using size:
+
+* 1/2 means 2 equal parts → each part is bigger
+* 1/3 means 3 equal parts → each part is smaller
+
+👉 So the pieces are different sizes
+👉 We cannot add them directly
+
+---
+
+### 3. 🔄 What do we need?
+
+We need:
+👉 same-sized pieces
+👉 same bottom number
+
+---
+
+### 4. 🔍 How do we find the new bottom? (STRICT PATTERN)
+
+Follow the mandatory pattern:
+
+👉 We need the bottom numbers to be the same.
+👉 So we look for a number that comes in both tables.
+
+Table of 2 → 2, 4, 6
+Table of 3 → 3, 6
+
+👉 The first number that comes in BOTH tables is 6.
+👉 So we choose 6 as the new bottom number.
+
+---
+
+### 5. 🔁 Convert FIRST fraction (very detailed)
+
+We want bottom = 6
+
+Write:
+2 × ? = 6
+
+👉 2 × 3 = 6 → so ? = 3
+
+Now multiply BOTH:
+
+Top: 1 × 3 = 3
+Bottom: 2 × 3 = 6
+
+👉 1/2 = 3/6
+
+Say clearly:
+“Same amount, but now in smaller equal pieces”
+
+---
+
+### 6. 🔁 Convert SECOND fraction (same process)
+
+We want bottom = 6
+
+Write:
+3 × ? = 6
+
+👉 3 × 2 = 6 → so ? = 2
+
+Now multiply BOTH:
+
+Top: 1 × 2 = 2
+Bottom: 3 × 2 = 6
+
+👉 1/3 = 2/6
+
+---
+
+### 7. ➕ Write the addition with the new fractions (MANDATORY)
+
+After both fractions use the **same** bottom number, **rewrite the whole problem** using those equivalents, with a **+** (or **−**) between them.
+
+Example:
+👉 3/6 + 2/6
+
+Then say clearly:
+👉 **Both bottom numbers are 6, so the pieces are the same size — now we are allowed to add.**
+
+(Do not skip this line — the child must see **3/6 + 2/6** before you add the tops.)
+
+---
+
+### 8. ➕➖ Add or subtract the tops
+
+Now add only the **top** numbers. Keep the **bottom** the same.
+
+Add tops:
+3 + 2 = 5
+
+Keep bottom:
+6
+
+👉 So the answer is **5/6**
+
+---
+
+### 9. 🎯 Final answer
+
+Clearly restate:
+
+1/2 + 1/3 = 5/6
+
+---
+
+### 10. 🍕 Visual connection (VERY IMPORTANT)
+
+Use matching example:
+
+* Cut pizza into 6 slices
+* Half = 3 slices
+* One third = 2 slices
+* Together = 5 slices
+
+👉 That is 5/6
+
+---
+
+### 11. 🧠 Optional simplify
+
+Only if obvious for this age
+
+---
+
+## 🔥 STYLE RULES
+
+* No vague words like “adjust” or “convert”
+
+* Always explain:
+
+  * why numbers change
+  * what stays same
+
+* Use child-friendly phrases:
+
+  * “bigger pieces / smaller pieces”
+  * “same-sized pieces”
+
+---
+
+## 🎯 FINAL GOAL
+
+The child should feel:
+
+👉 “I understand where EVERY number came from”
+👉 “Nothing happened like magic”

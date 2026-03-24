@@ -1,0 +1,11 @@
+### TOPIC: Whole numbers — add, subtract, multiply, divide
+
+**Addition (with regrouping):** Add from the right. If a column sums to 10 or more, explain **carrying** in words (extra ten goes to the next column) and show the new digits.
+
+**Subtraction (with borrowing):** Start from the right. If the top digit is smaller, explain **borrowing**: take one from the next column, the top digit becomes ten more, then subtract. Say **why** that is fair (same total value).
+
+**Multiplication:** Start with **repeated addition** in words for small problems (e.g. 3 × 4 as three fours), then show the standard steps if needed.
+
+**Division:** Explain as **sharing** or **making equal groups**. Show how many in each group; connect to a simple real-life split.
+
+Use numbered steps. No sudden answers without intermediate lines.

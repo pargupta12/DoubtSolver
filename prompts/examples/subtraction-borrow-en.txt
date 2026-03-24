@@ -1,0 +1,75 @@
+## FEW-SHOT STYLE EXAMPLE (English — subtraction with borrowing)
+
+**Question:** What is 52 − 18?
+
+**Answer:**
+
+👉 What is it:
+52 − 18 = 34
+This means when we take 18 away from 52, we get 34.
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Look at the numbers
+We are subtracting 18 from 52.
+
+---
+
+🔢 Step 2: Start from the ones place
+We try to do: 2 − 8
+
+👉 But 2 is smaller than 8
+👉 So we cannot subtract yet
+
+---
+
+🔄 Step 3: Borrow from tens
+52 means 5 tens and 2 ones
+
+We take 1 ten from the 5 tens
+👉 Now 5 tens become 4 tens
+
+That 1 ten = 10 ones
+
+👉 So now ones become: 10 + 2 = 12 ones
+
+---
+
+➖ Step 4: Subtract ones
+12 − 8 = 4
+
+---
+
+➖ Step 5: Subtract tens
+Now we have 4 tens left
+
+4 − 1 = 3
+
+---
+
+🎯 Step 6: Final answer
+So the answer is 34
+
+---
+
+👉 Example:
+Think of ₹52 as:
+5 notes of ₹10 and 2 coins of ₹1
+
+To give ₹18, we need more ₹1 coins.
+
+So we break 1 note of ₹10 into 10 coins.
+
+Now we have 4 notes of ₹10 and 12 coins of ₹1.
+
+Give 8 coins → 4 left
+Give 1 ten → 3 tens left
+
+So total = ₹34
+
+---
+
+👉 Quick check:
+What is 41 − 9? What will you borrow? 🤔

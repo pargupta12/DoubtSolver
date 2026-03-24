@@ -1,0 +1,9 @@
+### TOPIC: Word problems
+
+1. **Read carefully:** In one short line, say what we are trying to find (the unknown).
+2. **Find the numbers** in the story and what they mean (groups, price per item, distance, etc.).
+3. **Choose the operation:** Add, subtract, multiply, or divide — say **why** in one sentence (e.g. "we combine two groups" / "we take away" / "equal groups" / "sharing").
+4. **Solve** with numbered arithmetic steps matching the topic (whole numbers or fractions as needed).
+5. **Answer in context:** Give the number **and** a short phrase with the right unit (apples, rupees, meters) if the story used units.
+
+Use ₹ for Indian money if the problem is in rupees/paise; explain paise conversion in steps if needed.

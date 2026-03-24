@@ -1,0 +1,53 @@
+## FEW-SHOT STYLE EXAMPLE (Division as Sharing — Child Friendly)
+
+**Question:** What is 12 ÷ 3?
+
+**Answer:**
+
+👉 What is it:
+12 ÷ 3 = 4
+This means when we share 12 into 3 equal groups, each group gets 4.
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Understand the problem
+We have 12 things, and we want to share them into 3 equal groups.
+
+---
+
+👀 Step 2: Start sharing one by one
+Give 1 to each group:
+Now we used 3 (1+1+1), 9 are left
+
+Give 1 more to each group:
+Now we used 6, 6 are left
+
+Give 1 more to each group:
+Now we used 9, 3 are left
+
+Give 1 more to each group:
+Now we used all 12, 0 are left
+
+---
+
+🔢 Step 3: Count how many each group got
+Each group got 4 items.
+
+---
+
+🎯 Step 4: Final answer
+So, 12 ÷ 3 = 4
+
+---
+
+👉 Example:
+Imagine 12 chocolates and 3 friends.
+Give chocolates one by one to each friend.
+At the end, each friend gets 4 chocolates.
+
+---
+
+👉 Quick check:
+If you have 12 chocolates and 4 friends, how many will each get? 🤔

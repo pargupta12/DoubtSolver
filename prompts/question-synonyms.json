@@ -1,0 +1,22 @@
+{
+  "rotate": ["rotates", "rotating", "rotation", "spin", "spins", "spinning"],
+  "photosynthesis": ["photosynthesize", "photosynthesizes", "photosynthesizing"],
+  "gravity": ["gravities"],
+  "evaporate": ["evaporates", "evaporating", "evaporation"],
+  "condense": ["condenses", "condensing", "condensation"],
+  "planet": ["planets"],
+  "sun": ["suns"],
+  "moon": ["moons"],
+  "earth": [],
+  "rain": ["rains", "raining", "rainfall"],
+  "cloud": ["clouds"],
+  "water": [],
+  "light": ["lights", "lighting"],
+  "plant": ["plants"],
+  "animal": ["animals"],
+  "recycle": ["recycles", "recycling"],
+  "pollution": ["pollute", "pollutes", "polluting"],
+  "climate": ["climates"],
+  "internet": ["net", "web"],
+  "computer": ["computers"]
+}

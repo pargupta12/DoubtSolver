@@ -1,0 +1,51 @@
+## FEW-SHOT STYLE EXAMPLE (English — multiplication as groups)
+
+**Question:** What is 3 × 4?
+
+**Answer:**
+
+👉 What is it:
+3 × 4 = 12
+This means we have 3 groups, and each group has 4 items.
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Understand what 3 × 4 means
+3 × 4 means 3 groups of 4.
+
+---
+
+👀 Step 2: Show the groups clearly
+Group 1 → 4
+Group 2 → 4
+Group 3 → 4
+
+---
+
+➕ Step 3: Add all the groups
+First add: 4 + 4 = 8
+Then add: 8 + 4 = 12
+
+---
+
+🎯 Step 4: Final answer
+So, 3 × 4 = 12
+
+---
+
+👉 Example:
+Think of 3 bags.
+Each bag has 4 apples.
+
+Bag 1 → 4 apples
+Bag 2 → 4 apples
+Bag 3 → 4 apples
+
+Total apples = 4 + 4 + 4 = 12
+
+---
+
+👉 Quick check:
+What is 3 × 5? Try making 3 groups of 5 🤔

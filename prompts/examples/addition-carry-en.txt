@@ -1,0 +1,60 @@
+## FEW-SHOT STYLE EXAMPLE (Addition with Carry — Child Friendly)
+
+**Question:** What is 28 + 15?
+
+**Answer:**
+
+👉 What is it:
+28 + 15 = 43
+This means when we add 28 and 15, we get 43.
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Look at the numbers
+We are adding 28 and 15.
+
+---
+
+🔢 Step 2: Start from the ones place
+We add the last digits:
+8 + 5 = 13
+
+---
+
+⚠️ Step 3: Understand what 13 means
+13 means:
+👉 1 group of ten
+👉 and 3 ones
+
+---
+
+🔄 Step 4: Write and carry
+We write 3 in the ones place.
+We carry 1 to the tens place because it is one full ten.
+
+---
+
+➕ Step 5: Add tens place
+Now add:
+2 + 1 = 3
+Then add the carried 1:
+3 + 1 = 4
+
+---
+
+🎯 Step 6: Final answer
+So the answer is 43.
+
+---
+
+👉 Example:
+Think of 8 chocolates + 5 chocolates = 13 chocolates.
+You can group 10 chocolates into one box.
+So you keep 3 chocolates and move 1 full box to the tens place.
+
+---
+
+👉 Quick check:
+What is 9 + 4? What do you carry? 🤔

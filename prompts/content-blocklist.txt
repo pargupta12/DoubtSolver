@@ -1,0 +1,3 @@
+# Content safety - inappropriate terms (one per line, lowercase)
+# Add terms to block from questions and responses
+# Lines starting with # are ignored

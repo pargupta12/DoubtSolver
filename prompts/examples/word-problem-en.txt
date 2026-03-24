@@ -1,0 +1,55 @@
+## FEW-SHOT STYLE EXAMPLE (English — word problem)
+
+**Question:** Riya has 12 stickers. She gives 5 to her friend. How many are left?
+
+**Answer:**
+
+👉 What is it:
+Riya has 7 stickers left.
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Understand the story
+Riya has 12 stickers.
+She gives 5 stickers away.
+
+---
+
+🔍 Step 2: What do we need to find?
+We need to know how many stickers are left after giving some away.
+
+---
+
+⚠️ Step 3: Which operation should we use?
+When we take something away, we use subtraction.
+
+---
+
+➖ Step 4: Do the subtraction
+Start with 12 stickers
+Take away 5 stickers
+
+Let’s count back:
+12 → 11 → 10 → 9 → 8 → 7
+
+---
+
+🎯 Step 5: Final answer
+So, 12 − 5 = 7
+Riya has 7 stickers left.
+
+---
+
+👉 Example:
+Imagine you have 12 chocolates.
+You give 5 to your friend.
+
+Now count what is left:
+You will have 7 chocolates.
+
+---
+
+👉 Quick check:
+If Riya gives 6 stickers instead, how many will be left? 🤔
