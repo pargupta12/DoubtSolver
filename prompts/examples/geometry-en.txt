@@ -1,0 +1,57 @@
+## FEW-SHOT STYLE EXAMPLE (Geometry — Area of Rectangle)
+
+**Question:** A garden is 12 metres long and 8 metres wide. What is its area?
+
+**Answer:**
+
+👉 What is it:
+The area of the garden is 96 m².
+This means the garden covers 96 square metres of ground.
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Identify the shape
+The garden is a rectangle. It has a length and a breadth (width).
+
+---
+
+📏 Step 2: Write down what we know
+Length = 12 metres
+Breadth = 8 metres
+
+---
+
+📐 Step 3: Use the area formula
+Area of a rectangle = length × breadth
+
+---
+
+🔢 Step 4: Multiply
+Area = 12 × 8
+
+Let's break it down:
+12 × 8 = (10 × 8) + (2 × 8)
+= 80 + 16
+= 96
+
+---
+
+🎯 Step 5: Write the answer with correct units
+Area = 96 m²
+
+We write m² (square metres) because area measures how much flat space something covers.
+
+---
+
+👉 Example:
+Think of the garden as a big grid.
+If you lay 1 metre × 1 metre tiles on the ground:
+You would need 96 tiles to cover the whole garden.
+That is what 96 square metres means.
+
+---
+
+👉 Quick check:
+If the garden was a square with each side 10 metres, what would its area be? 🤔

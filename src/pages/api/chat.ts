@@ -88,6 +88,7 @@ export default async function handler(
       priorAnswer,
       quickCheckAnswer,
       originalAnswer,
+      conversationHistory: rawConversationHistory,
     } = req.body;
 
     if (!question || typeof question !== "string") {
@@ -155,19 +156,32 @@ Keep it very simple and encouraging.`;
     const isMath = isMathQuestion(trimmedQuestion);
 
     // Build messages — include prior context for "explain differently" requests
-    const baseMessages: Array<{ role: string; content: string }> = isFollowUp
-      ? [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: priorQuestion as string },
-          { role: "assistant", content: priorAnswer as string },
-          { role: "user", content: language === "hi"
-            ? "मैं पिछली बात नहीं समझा। कृपया इसे बिल्कुल अलग तरीके से और एक नए उदाहरण के साथ समझाओ।"
-            : "I didn't understand that. Please explain it again with a completely different approach and a new example." },
-        ]
-      : [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userMessage },
-        ];
+    // or conversation history for multi-turn follow-ups
+    const conversationHistory = Array.isArray(rawConversationHistory) ? rawConversationHistory as Array<{ role: string; content: string }> : null;
+
+    let baseMessages: Array<{ role: string; content: string }>;
+    if (isFollowUp) {
+      baseMessages = [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: priorQuestion as string },
+        { role: "assistant", content: priorAnswer as string },
+        { role: "user", content: language === "hi"
+          ? "मैं पिछली बात नहीं समझा। कृपया इसे बिल्कुल अलग तरीके से और एक नए उदाहरण के साथ समझाओ।"
+          : "I didn't understand that. Please explain it again with a completely different approach and a new example." },
+      ];
+    } else if (conversationHistory && conversationHistory.length > 0) {
+      // Multi-turn conversation: include prior turns as context
+      baseMessages = [
+        { role: "system", content: systemPrompt },
+        ...conversationHistory.slice(-8), // Max 4 turn pairs to stay within token limits
+        { role: "user", content: userMessage },
+      ];
+    } else {
+      baseMessages = [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userMessage },
+      ];
+    }
 
     const maxAttempts = 2;
     let fullText = "";
@@ -242,51 +256,22 @@ Keep it very simple and encouraging.`;
       let simplifyPrompt: string;
 
       if (language === "hi") {
-        if (ageBand === "6-7") {
-          const headings = "👉 यह क्या है: / 👉 यह मज़ेदार क्यों है: / 👉 उदाहरण: / 👉 जल्दी जाँच:";
-          simplifyPrompt = `इस जवाब को 6-7 साल के बच्चे के लिए दोबारा लिखो। नियम:
-- हर वाक्य में 8 शब्द या उससे कम। हर शब्द गिनो।
-- सिर्फ आसान हिंदी: खाना, खेल, परिवार, जानवर।
-- कोई नाम वाले किरदार नहीं। "तुम" या "एक बच्चा" कहो।
-- रोज़मर्रा की चीज़ें: उंगलियाँ, सेब, पेंसिल, गेंद।
-- ये शीर्षक इसी क्रम में रखो: ${headings}
-
-पुराना जवाब (बहुत मुश्किल — बिल्कुल नए सिरे से लिखो):
-${fullText}`;
-        } else {
-          const headings = "👉 यह क्या है: / 👉 यह कैसे काम करता है: / 👉 उदाहरण: / 👉 जल्दी जाँच:";
-          const sentenceNote = sentenceLengthFails
-            ? ` हर वाक्य ${ageBand === "8-9" ? "12" : "15"} शब्दों से कम रखो।`
-            : "";
-          simplifyPrompt = `इस जवाब को ${childAge} साल के बच्चे के लिए सरल हिंदी में दोबारा लिखो।${sentenceNote} यही शीर्षक रखो: ${headings}.
+        const headings = "👉 यह क्या है: / 👉 यह कैसे काम करता है: / 👉 उदाहरण: / 👉 जल्दी जाँच:";
+        const sentenceNote = sentenceLengthFails
+          ? ` हर वाक्य ${ageBand === "6-9" ? "12" : "15"} शब्दों से कम रखो।`
+          : "";
+        simplifyPrompt = `इस जवाब को ${childAge} साल के बच्चे के लिए सरल हिंदी में दोबारा लिखो।${sentenceNote} यही शीर्षक रखो: ${headings}.
 
 पुराना जवाब: ${fullText}`;
-        }
       } else {
-        // English simplification
-        if (ageBand === "6-7") {
-          // Young children need story-reframing, not just word swaps
-          const headings = "👉 What is it: / 👉 Why is it cool: / 👉 Example: / 👉 Quick check:";
-          simplifyPrompt = `Rewrite this answer for a 6-year-old child. Follow every rule below exactly.
-
-Rules:
-- Every sentence must be 8 words or fewer. Count every word.
-- Use only words a 6-year-old knows: things they eat, touch, see, or play with.
-- Write like a short fun story — use everyday objects ALL children know: fingers, apples, biscuits, pencils, balls, water, sun. Do NOT use named characters (no "Pip", "Priya", "Arjun"). Use "you" or "a child" instead.
-- Show wonder in the second section — make the child feel amazed, not taught.
-- Keep exactly these headings in order: ${headings}
-${jargon.length > 0 ? `- Replace these complex words: ${jargon.join(", ")}` : ""}
-
-Original answer (too complex — rewrite completely from scratch):
-${fullText}`;
-        } else {
-          // Older bands: targeted simplification
+        {
+          // English simplification for all age bands
           const headings = "👉 What is it: / 👉 How does it work: / 👉 Example: / 👉 Quick check:";
           const mathNote = isMath
             ? " Keep all numbered math steps and equivalent fractions (e.g. 1/2 = 3/6); do not drop intermediate work."
             : "";
           const sentenceNote = sentenceLengthFails
-            ? ` Every sentence must be ${ageBand === "8-9" ? "12" : "15"} words or fewer.`
+            ? ` Every sentence must be ${ageBand === "6-9" ? "12" : "15"} words or fewer.`
             : "";
           simplifyPrompt = `Rewrite this answer for a ${childAge}-year-old.${
             jargon.length > 0 ? ` Replace these words with simpler ones: ${jargon.join(", ")}.` : ""

@@ -1,0 +1,46 @@
+### TOPIC: Decimals (Class 4–6)
+
+Decimals are fractions written a different way. The dot (.) separates the whole part from the smaller-than-one part.
+The biggest teaching challenge: children see 0.5 and 0.50 as different. Show them they are the same.
+
+---
+
+#### Teaching approach by class level:
+
+**Class 4 (Age 9–10): Introduction to decimals**
+- Start with money: "₹3.50 means 3 rupees and 50 paise. The dot separates rupees from paise."
+- Tenths: divide 1 into 10 equal parts. Each part = 0.1 = one-tenth.
+- Hundredths: divide 1 into 100 equal parts. Each part = 0.01 = one-hundredth.
+- Link to fractions: 0.5 = 5/10 = 1/2. 0.25 = 25/100 = 1/4.
+- Number line: place 0.3, 0.7, 1.5 on a number line between 0 and 2.
+
+**Class 5 (Age 10–11): Operations with decimals**
+- Addition/subtraction: LINE UP the dots. "Stack the numbers so the dots are in a straight column."
+  2.35 + 1.4 → Write 1.4 as 1.40 first, then add column by column.
+- Comparing: "0.5 and 0.50 are the same. 0.5 and 0.05 are NOT the same." Add trailing zeros to compare: 0.50 vs 0.05.
+- Multiplication by 10, 100: move the dot RIGHT. "3.45 × 10 = 34.5. The dot jumps one place to the right."
+- Division by 10, 100: move the dot LEFT. "345 ÷ 100 = 3.45."
+
+**Class 6 (Age 11–12): Decimal multiplication and division**
+- Multiply decimals: ignore the dots first, multiply as whole numbers, then count total decimal places and put the dot back.
+  "1.2 × 0.3: Multiply 12 × 3 = 36. Total decimal places = 1 + 1 = 2. So answer = 0.36."
+- Divide decimals: make the divisor a whole number first (multiply both by 10 or 100).
+  "4.8 ÷ 0.6: Multiply both by 10 → 48 ÷ 6 = 8."
+- Converting fractions to decimals: divide numerator by denominator. 3/4 = 3 ÷ 4 = 0.75.
+- Converting decimals to fractions: 0.75 = 75/100 = 3/4 (simplify).
+
+---
+
+#### Step format for decimal questions:
+
+1. **Understand what the decimal means**: write in words ("3.25 means 3 ones, 2 tenths, and 5 hundredths") AND as a fraction.
+2. **Line up the dots** (for addition/subtraction) — add trailing zeros if needed to make same number of decimal places.
+3. **Perform the operation** step by step, column by column.
+4. **Place the dot** correctly in the answer.
+5. **Sense check**: "0.3 × 0.2 = 0.06. Is this smaller than both 0.3 and 0.2? Yes — because multiplying two numbers less than 1 gives an even smaller number."
+
+#### Common mistakes to prevent:
+- "0.5 + 0.3 = 0.8" ✓ but "0.5 + 0.32 ≠ 0.37" — must line up: 0.50 + 0.32 = 0.82.
+- When multiplying, children often forget to count decimal places. Always say: "Count total decimal places in BOTH numbers."
+- 0.1 is NOT one percent. 0.1 = 10%. 0.01 = 1%. This confusion is common — address it directly.
+- "Adding a zero after the decimal does not change the value: 0.5 = 0.50 = 0.500."

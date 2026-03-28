@@ -11,24 +11,21 @@ const BLOCKLIST = readFileSync(
 
 // ── Word limits (math answers are exempt — they need numbered steps) ──────────
 const AGE_LIMITS: Record<string, number> = {
-  "6-7":   60,
-  "8-9":   90,
+  "6-9":   90,
   "10-11": 140,
   "12-15": 200,
 };
 
 // ── Max words per sentence ────────────────────────────────────────────────────
 const SENTENCE_WORD_CAPS: Record<string, number> = {
-  "6-7":   8,
-  "8-9":   12,
+  "6-9":   12,
   "10-11": Infinity,
   "12-15": Infinity,
 };
 
 // ── Flesch-Kincaid target grade ceiling ───────────────────────────────────────
 const FK_GRADE_LIMITS: Record<string, number> = {
-  "6-7":   2.0,
-  "8-9":   3.5,
+  "6-9":   3.5,
   "10-11": 5.5,
   "12-15": 9.0,  // effectively no cap
 };
@@ -132,7 +129,7 @@ export function fleschKincaidGrade(text: string): number {
 
 /**
  * Returns the number of sentences that exceed the word cap for the age band.
- * Only enforced for 6-7 and 8-9 bands.
+ * Only enforced for the 6-9 band (12-word cap).
  */
 export function countLongSentences(text: string, ageBand: string): number {
   const cap = SENTENCE_WORD_CAPS[ageBand] ?? Infinity;

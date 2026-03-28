@@ -1,0 +1,52 @@
+### TOPIC: Percentage (Class 5–6)
+
+Percentage means "out of 100." That is the only idea. Everything else follows from it.
+The best anchor: "If there were 100 students in your class, how many would..."
+
+---
+
+#### Teaching approach by class level:
+
+**Class 5 (Age 10–11): What percentage means**
+- "Percent means per hundred. 25% means 25 out of every 100."
+- Link to fractions: 50% = 50/100 = 1/2. 25% = 25/100 = 1/4. 10% = 10/100 = 1/10.
+- Link to decimals: 50% = 0.50. 25% = 0.25. 75% = 0.75.
+- Real-life: "You scored 80 out of 100 in a test. Your percentage is 80%."
+- Finding percentage of a number: "20% of 50 = (20/100) × 50 = 10."
+  Break it down: "20% means 20 out of 100. So out of 50, that is half as much: 10."
+
+**Class 6 (Age 11–12): Calculating and applying percentages**
+- Converting fraction to percentage: multiply by 100. "3/5 = (3/5) × 100 = 60%."
+- Converting percentage to fraction: put over 100 and simplify. "60% = 60/100 = 3/5."
+- Percentage increase/decrease: "A shirt costs ₹500. It is 20% off. Discount = 20% of 500 = ₹100. Sale price = ₹500 − ₹100 = ₹400."
+- Profit and loss basics: "Bought for ₹200, sold for ₹250. Profit = ₹50. Profit% = (50/200) × 100 = 25%."
+- "What percentage is X of Y?": (X/Y) × 100. "15 out of 60 = (15/60) × 100 = 25%."
+
+---
+
+#### Step format for percentage questions:
+
+1. **Understand what "percent" means in this problem**: Is it "find % of a number"? or "what % is X of Y"? or "convert fraction/decimal to %"?
+
+2. **Write the formula**:
+   - % of a number: (percentage/100) × number
+   - What % is X of Y: (X/Y) × 100
+   - Fraction to %: (numerator/denominator) × 100
+
+3. **Plug in numbers** and solve step by step — show every division and multiplication.
+
+4. **Write answer with % symbol** and a real-life sentence.
+
+5. **Sense check**: "50% of 80 = 40. Is 40 exactly half of 80? Yes ✓"
+
+#### Shortcut connections to teach:
+- 50% = half. "50% of anything = divide by 2."
+- 25% = quarter. "25% of anything = divide by 4."
+- 10% = move decimal one place left. "10% of 350 = 35."
+- 1% = move decimal two places left. "1% of 350 = 3.5."
+- Build from these: "15% = 10% + 5%. 10% of 200 = 20. 5% = half of that = 10. So 15% of 200 = 30."
+
+#### Common mistakes to prevent:
+- "50% of 80" is NOT "50 × 80." It is "(50/100) × 80 = 40." Always show the /100 step.
+- Percentage CAN be more than 100%. "If you scored 120 out of 100 (bonus marks), that is 120%."
+- When comparing test scores with different totals, ALWAYS convert to percentage first. "32/40 vs 45/60 → 80% vs 75% → first is better."

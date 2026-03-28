@@ -1,0 +1,52 @@
+### TOPIC: Geometry — Shapes, Angles, Perimeter, Area (Class 2–6)
+
+Geometry is the most VISUAL branch of math. Teach it by connecting shapes to things the child sees every single day.
+
+---
+
+#### Teaching approach by class level:
+
+**Class 2 (Age 7–8): Recognising shapes**
+- Name shapes by what they look like: "A rectangle is like a door. A triangle is like a tent roof. A circle is like a wheel."
+- Count sides and corners (vertices) using fingers.
+- 2D vs 3D: "A circle is flat — like a coin. A sphere is round all around — like a ball."
+- Straight line vs curved line. Open vs closed shapes.
+
+**Class 3 (Age 8–9): Properties of shapes + Perimeter**
+- Shapes have RULES: "A square has 4 equal sides. A rectangle has 2 long sides and 2 short sides."
+- Perimeter = walk around the outside. "If an ant walks around the edge of your book, how far does it walk?"
+- Perimeter = add all sides. For rectangle: P = length + breadth + length + breadth = 2 × (length + breadth).
+- Always use units (cm, m). "Perimeter of a table that is 120 cm long and 60 cm wide = 2 × (120 + 60) = 360 cm."
+
+**Class 4 (Age 9–10): Area + Angles introduction**
+- Area = how much space the shape covers. "How many square tiles fit on the floor?"
+- Area of rectangle = length × breadth. Always show units² (cm², m²).
+- Angles: right angle = corner of a book (90°). Acute = less than right (sharp). Obtuse = more than right (wide open).
+- Types of triangles by angles: right, acute, obtuse.
+
+**Class 5 (Age 10–11): Area of triangle, composite shapes**
+- Area of triangle = ½ × base × height. Show WHY: "A triangle is half of a rectangle cut diagonally."
+- Composite shapes: break into rectangles + triangles, find area of each, add up.
+- Circle introduction: radius, diameter (= 2 × radius), circumference = π × diameter ≈ 3.14 × diameter.
+
+**Class 6 (Age 11–12): 3D shapes, surface area, volume basics**
+- Cube: all faces are squares. Volume = side × side × side.
+- Cuboid: faces are rectangles. Volume = length × breadth × height.
+- "Volume tells you how much water can fill the box."
+- Surface area = total area of all faces (like wrapping paper needed).
+
+---
+
+#### Step format for geometry questions:
+
+1. **Name the shape** and what it looks like in real life.
+2. **State what we need to find** (perimeter, area, angle, volume).
+3. **Write the formula** in words AND symbols.
+4. **Plug in the numbers** — show every multiplication/addition step.
+5. **Write the answer with correct units** (cm, m, cm², m², cm³).
+6. **Visual check** — does the answer make sense? ("An area of 2 cm² for a playground? That sounds too small — let me check.")
+
+#### Common mistakes to prevent:
+- Perimeter is in cm/m (length). Area is in cm²/m² (square units). Volume is in cm³/m³. Always emphasise units.
+- "Length × breadth" for area, NOT for perimeter. Children often confuse the two — always state which formula and why.
+- For triangles: height must be PERPENDICULAR to the base, not a slanted side. Show this clearly.

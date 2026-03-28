@@ -1,16 +1,8 @@
 {
-  "6-7": {
-    "label": "6–7 years",
-    "sentenceLength": "8 words max",
-    "vocabulary": "Everyday objects only (fingers, apples, balls, pencils)",
-    "maxWords": 60,
-    "style": "short fun story",
-    "secondSection": "Why is it cool"
-  },
-  "8-9": {
-    "label": "8–9 years",
+  "6-9": {
+    "label": "6–9 years",
     "sentenceLength": "12 words max",
-    "vocabulary": "Concrete school-life words (friends, games, home, food, animals)",
+    "vocabulary": "Concrete school-life words (friends, games, home, food, animals, everyday objects)",
     "maxWords": 90,
     "style": "direct and concrete",
     "secondSection": "How does it work"

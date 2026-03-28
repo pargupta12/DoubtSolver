@@ -1,0 +1,62 @@
+### TOPIC: Measurement — Length, Weight, Capacity, Time, Money (Class 2–5)
+
+Measurement is the most REAL math — children use it when they buy sweets, weigh themselves, and tell time.
+Always connect the numbers to something the child actually does.
+
+---
+
+#### Teaching approach by class level:
+
+**Class 2 (Age 7–8): Standard units introduction**
+- Length: cm and m. "Your hand span is about 15 cm. Your arm stretched out is about 1 metre."
+- Weight: grams and kilograms. "A pencil = about 10 grams. A 1-litre water bottle = 1 kilogram."
+- Capacity: mL and L. "A teaspoon = about 5 mL. A big water bottle = 1 litre = 1000 mL."
+- Time: reading a clock — hours and minutes. "Short hand = hour, long hand = minutes."
+- Money: coins and notes, adding amounts, giving change.
+
+**Class 3 (Age 8–9): Converting units**
+- 1 m = 100 cm. 1 km = 1000 m.
+- 1 kg = 1000 g.
+- 1 L = 1000 mL.
+- Always teach conversion as MULTIPLICATION or DIVISION:
+  "To go from big unit to small unit → multiply (more smaller pieces)."
+  "To go from small unit to big unit → divide (fewer bigger pieces)."
+- Time: minutes and hours. 1 hour = 60 minutes. 1 minute = 60 seconds.
+- Calendar: days, weeks, months, year. Leap year.
+
+**Class 4 (Age 9–10): Mixed units and word problems**
+- Adding/subtracting with different units: "2 kg 300 g + 1 kg 800 g = ?" First convert: 2300 g + 1800 g = 4100 g = 4 kg 100 g.
+- Time word problems: "A movie starts at 3:45 PM and is 2 hours 20 minutes long. When does it end?"
+- Money: bills/shopping problems, discount calculations.
+
+**Class 5 (Age 10–11): Multi-step measurement problems**
+- Converting between metric units fluently.
+- Speed = distance ÷ time. "If you walk 3 km in 1 hour, your speed is 3 km/h."
+- Relate measurement to geometry: "The park is 200 m long and 150 m wide. What is its perimeter? What is its area?"
+- Temperature: Celsius scale. Water freezes at 0°C, boils at 100°C.
+
+---
+
+#### Step format for measurement questions:
+
+1. **Read the question** and identify: What is being measured? (length / weight / capacity / time / money)
+2. **Check the units**: Are they the same? If not, convert FIRST.
+3. **Do the calculation** step by step — show conversions clearly:
+   "2 km 500 m = 2500 m" — show the multiplication: 2 × 1000 + 500 = 2500 m
+4. **Write the answer** in the correct unit (and convert back to mixed units if needed).
+5. **Sense check**: "Is 50 km a reasonable distance for walking to school? No — that sounds too far. Let me recheck."
+
+#### Money problems (Indian Rupees):
+- Use ₹ symbol. 1 Rupee = 100 paise.
+- Show change calculation: "You pay ₹100 for something that costs ₹73. Change = ₹100 − ₹73 = ₹27."
+- Bill/shopping: list items, add prices, subtract from amount paid.
+
+#### Time problems:
+- Always use AM/PM or 24-hour format clearly.
+- Duration: count forward from start time. "3:45 + 2 hours = 5:45. Then +20 minutes = 6:05 PM."
+- Elapsed time: "From 10:30 AM to 1:15 PM = 2 hours 45 minutes." Show the counting: 10:30→12:30 = 2 hrs, 12:30→1:15 = 45 min.
+
+#### Common mistakes to prevent:
+- Forgetting to convert units before adding/subtracting. ALWAYS check units first.
+- Time is NOT decimal: 1.5 hours = 1 hour 30 minutes, NOT 1 hour 50 minutes. Be very careful with time math.
+- For money: do not mix ₹ and paise without converting. "₹3.50 = ₹3 and 50 paise."

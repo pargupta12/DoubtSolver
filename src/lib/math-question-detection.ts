@@ -4,7 +4,7 @@
  */
 
 const MATH_PHRASES =
-  /\b(plus|minus|times|multiply|multiplied|divide|divided|add|added|subtract|subtracted|fraction|fractions|half|halves|third|thirds|quarter|quarters|equals|equal to|what is|how much|how many|lcm|gcd|hcf|gcf|percent|percentage|perimeter|area of|volume of|solve|equation|algebra|numerator|denominator|square root|decimal|ratio|proportion|word problem|pemdas|bodmas)\b/i;
+  /\b(plus|minus|times|multiply|multiplied|divide|divided|add|added|subtract|subtracted|fraction|fractions|half|halves|third|thirds|quarter|quarters|equals|equal to|what is|how much|how many|lcm|gcd|hcf|gcf|percent|percentage|perimeter|area of|volume of|surface area|solve|equation|algebra|numerator|denominator|square root|decimal|ratio|proportion|word problem|pemdas|bodmas|place value|face value|expanded form|prime number|composite number|factor|multiple|divisibility|ascending order|descending order|angle|triangle|rectangle|circle|diameter|radius|circumference|convert.*to.*metres?|convert.*to.*cm|convert.*to.*kg|profit|loss|discount|interest)\b/i;
 
 const MATH_WORD_PROBLEM =
   /\b(how many (more|less|left|altogether|in all)|cost(s)?|buy(s|ing)?|apples?|oranges?|slices?|pizzas?|cake|meters?|metres?|cm\b|km\b|kg\b|liters?|litres?|rupees?|dollars?)\b/i;

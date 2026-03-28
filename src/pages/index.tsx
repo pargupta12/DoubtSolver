@@ -7,6 +7,7 @@ import type { AppLanguage } from "@/lib/answer-language";
 import { loadState, recordQuestion, recordQuickCheck, getWeeklySummary, BADGE_DEFS } from "@/lib/game-state";
 import type { GameState } from "@/lib/game-state";
 import { SUBJECT_META } from "@/lib/subject-meta";
+import { getTodaysWonder } from "@/lib/daily-wonders";
 import StarStreak from "@/components/StarStreak";
 import BadgeToast from "@/components/BadgeToast";
 import TopicMastery from "@/components/TopicMastery";
@@ -16,8 +17,7 @@ const AGE_STORAGE_KEY = "doubt-solver-age";
 const LANG_STORAGE_KEY = "doubt-solver-language";
 
 const AGE_OPTIONS = [
-  { value: 6,  label: "6–7 years" },
-  { value: 8,  label: "8–9 years" },
+  { value: 7,  label: "6–9 years" },
   { value: 10, label: "10–11 years" },
   { value: 13, label: "12–15 years" },
 ];
@@ -28,7 +28,7 @@ const LANG_OPTIONS: { value: AppLanguage; label: string }[] = [
 ];
 
 interface AnswerSection {
-  type: "what" | "how" | "cool" | "example" | "check" | "other";
+  type: "what" | "how" | "cool" | "example" | "check" | "puzzle" | "steps" | "answer" | "bigidea" | "other";
   heading: string;
   content: string;
 }
@@ -42,6 +42,12 @@ const SECTION_CONFIG: Record<
   cool:    { bg: "bg-pink-50",    border: "border-pink-200",   headingColor: "text-pink-700",    icon: "🤩" },
   example: { bg: "bg-amber-50",   border: "border-amber-200",  headingColor: "text-amber-700",   icon: "🌟" },
   check:   { bg: "bg-purple-50",  border: "border-purple-200", headingColor: "text-purple-700",  icon: "✏️" },
+  // Reasoning / puzzle headings
+  puzzle:  { bg: "bg-indigo-50",  border: "border-indigo-200", headingColor: "text-indigo-700",  icon: "🧩" },
+  steps:   { bg: "bg-sky-50",     border: "border-sky-200",    headingColor: "text-sky-700",     icon: "🔍" },
+  answer:  { bg: "bg-emerald-50", border: "border-emerald-200",headingColor: "text-emerald-700", icon: "✅" },
+  // Creative thinking headings
+  bigidea: { bg: "bg-amber-50",   border: "border-amber-200",  headingColor: "text-amber-700",   icon: "💡" },
   other:   { bg: "bg-white",      border: "border-gray-100",   headingColor: "text-gray-600",    icon: ""   },
 };
 
@@ -54,6 +60,10 @@ function parseAnswerSections(text: string, lang: AppLanguage): AnswerSection[] {
           { type: "cool",    pattern: /यह मज़ेदार क्यों है/i },
           { type: "example", pattern: /उदाहरण/i },
           { type: "check",   pattern: /जल्दी जाँच/i },
+          // Reasoning headings (Hindi)
+          { type: "puzzle",  pattern: /पहेली/i },
+          { type: "steps",   pattern: /कदम दर कदम|step by step/i },
+          { type: "answer",  pattern: /जवाब|उत्तर/i },
         ]
       : [
           { type: "what",    pattern: /what is it/i },
@@ -61,6 +71,14 @@ function parseAnswerSections(text: string, lang: AppLanguage): AnswerSection[] {
           { type: "cool",    pattern: /why is it cool/i },
           { type: "example", pattern: /^example$/i },
           { type: "check",   pattern: /quick check/i },
+          // Reasoning headings
+          { type: "puzzle",  pattern: /the puzzle/i },
+          { type: "steps",   pattern: /let'?s solve|step by step/i },
+          { type: "answer",  pattern: /the answer/i },
+          // Creative thinking headings
+          { type: "what",    pattern: /what is the question really asking/i },
+          { type: "steps",   pattern: /let'?s think/i },
+          { type: "bigidea", pattern: /the big idea/i },
         ];
 
   const parts = text.split(/(?=👉)/);
@@ -107,6 +125,20 @@ export default function Home() {
   const [difficultyScore, setDifficultyScore]     = useState(0);
   const [showAdaptSuggestion, setShowAdaptSuggestion] = useState<"simpler" | "harder" | null>(null);
 
+  // ── Multi-turn conversation ──────────────────────────────────────────────
+  const [conversationHistory, setConversationHistory] = useState<
+    Array<{ role: "user" | "assistant"; content: string; subject?: string }>
+  >([]);
+  const MAX_CONVERSATION_TURNS = 5;
+
+  // ── Camera / OCR ───────────────────────────────────────────────────────
+  const [ocrLoading, setOcrLoading] = useState(false);
+  const cameraInputRef = useRef<HTMLInputElement>(null);
+
+  // ── Today's Wonder ─────────────────────────────────────────────────────
+  const [todaysWonder, setTodaysWonder] = useState("");
+  const [wonderDismissed, setWonderDismissed] = useState(false);
+
   // ── Gamification ─────────────────────────────────────────────────────────
   // IMPORTANT: initialize with a static SSR-safe default (no localStorage read).
   // Reading localStorage on the server returns defaultState() but the client
@@ -130,11 +162,15 @@ export default function Home() {
   // "Tap to listen" hint on the 🔊 button instead.
   const [isCapacitorApp, setIsCapacitorApp]     = useState(false);
   const [unreadAnswer, setUnreadAnswer]         = useState(false);
-  // Load real localStorage state + detect Capacitor after hydration (client only)
+  // Load real localStorage state + detect Capacitor + Today's Wonder after hydration (client only)
   useEffect(() => {
     setGameState(loadState());
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     setIsCapacitorApp(!!(window as any).Capacitor);
+    setTodaysWonder(getTodaysWonder());
+    // Check if wonder was dismissed today
+    const dismissedDate = sessionStorage.getItem("ds-wonder-dismissed");
+    if (dismissedDate === new Date().toDateString()) setWonderDismissed(true);
   }, []);
 
   const bottomRef            = useRef<HTMLDivElement>(null);
@@ -149,10 +185,24 @@ export default function Home() {
   ageRef.current = age;
   languageRef.current = language;
 
+  // ── Detect if a new question is a follow-up to the conversation ──────────
+  const isFollowUpQuestion = useCallback((newQ: string): boolean => {
+    if (conversationHistory.length === 0) return false;
+    const lastSub = conversationHistory[conversationHistory.length - 1]?.subject ?? "";
+    // Simple heuristic: if the question shares 2+ significant words with the last Q, it's a follow-up
+    const lastUserMsg = conversationHistory.filter(m => m.role === "user").pop()?.content ?? "";
+    const lastWords = new Set(lastUserMsg.toLowerCase().split(/\s+/).filter(w => w.length > 3));
+    const newWords = newQ.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+    const overlap = newWords.filter(w => lastWords.has(w)).length;
+    // Also check: short questions like "why?" or "how?" are almost always follow-ups
+    const isShortFollowUp = newQ.split(/\s+/).length <= 5 && conversationHistory.length > 0;
+    return overlap >= 2 || isShortFollowUp || false;
+  }, [conversationHistory]);
+
   // ── Core submit ─────────────────────────────────────────────────────────────
   const submitWithQuestion = useCallback(async (
     q: string,
-    opts?: { priorQuestion?: string; priorAnswer?: string }
+    opts?: { priorQuestion?: string; priorAnswer?: string; forceNewConversation?: boolean }
   ) => {
     const trimmed = q.trim();
     if (!trimmed) return;
@@ -171,6 +221,16 @@ export default function Home() {
     const controller = new AbortController();
     abortControllerRef.current = controller;
 
+    // ── Multi-turn: decide if this is a follow-up or a new conversation ──
+    const isFollowUp = !opts?.forceNewConversation && isFollowUpQuestion(trimmed);
+    // Build conversation context for the API
+    let conversationContext: Array<{ role: string; content: string }> | undefined;
+    if (isFollowUp && conversationHistory.length > 0) {
+      // Send last few turns as context (max MAX_CONVERSATION_TURNS * 2 messages)
+      const recentHistory = conversationHistory.slice(-(MAX_CONVERSATION_TURNS * 2));
+      conversationContext = recentHistory.map(m => ({ role: m.role, content: m.content }));
+    }
+
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
@@ -181,6 +241,7 @@ export default function Home() {
           language: languageRef.current,
           priorQuestion: opts?.priorQuestion,
           priorAnswer: opts?.priorAnswer,
+          conversationHistory: conversationContext,
         }),
         signal: controller.signal,
       });
@@ -213,6 +274,18 @@ export default function Home() {
       // Store for potential follow-up
       priorContextRef.current = { question: trimmed, answer: text };
 
+      // ── Update conversation history ─────────────────────────────────────
+      const userEntry = { role: "user" as const, content: trimmed, subject: detectedSubject };
+      const assistantEntry = { role: "assistant" as const, content: text, subject: detectedSubject };
+      if (isFollowUp) {
+        setConversationHistory(prev => [
+          ...prev, userEntry, assistantEntry,
+        ].slice(-(MAX_CONVERSATION_TURNS * 2)));
+      } else {
+        // New conversation — reset history
+        setConversationHistory([userEntry, assistantEntry]);
+      }
+
       // ── Award stars + update streak on answer received ──────────────────
       if (text.trim()) {
         const detSub = detectedSubjectRef.current || "general";
@@ -231,7 +304,7 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isFollowUpQuestion, conversationHistory]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Badge queue drain ────────────────────────────────────────────────────
   const drainBadgeQueue = useCallback(() => {
@@ -251,6 +324,75 @@ export default function Home() {
     if (!ctx) return;
     submitWithQuestion(ctx.question, { priorQuestion: ctx.question, priorAnswer: ctx.answer });
   }, [submitWithQuestion]);
+
+  // ── New conversation (explicit reset) ──────────────────────────────────────
+  const handleNewConversation = useCallback(() => {
+    setConversationHistory([]);
+    setQuestion("");
+    setAnswer("");
+    setSubject("");
+    setQuickCheckInput("");
+    setQuickCheckFeedback("");
+    priorContextRef.current = null;
+  }, []);
+
+  // ── Camera / OCR handler ────────────────────────────────────────────────────
+  const handleCameraCapture = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    // Reset the input so the same file can be re-selected
+    e.target.value = "";
+
+    setOcrLoading(true);
+    setError(null);
+
+    try {
+      // Convert file to base64 data URI
+      const base64 = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result as string);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+
+      // Send to OCR endpoint
+      const res = await fetch("/api/ocr", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ image: base64 }),
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        setError(err.error || "Could not read the image");
+        return;
+      }
+
+      const { question: extractedQ } = await res.json();
+      if (extractedQ) {
+        setQuestion(extractedQ);
+        submitWithQuestion(extractedQ, { forceNewConversation: true });
+      }
+    } catch {
+      setError(language === "hi" ? "फोटो पढ़ने में गड़बड़ हुई।" : "Could not read the photo. Try again.");
+    } finally {
+      setOcrLoading(false);
+    }
+  }, [submitWithQuestion, language]);
+
+  // ── Today's Wonder handler ──────────────────────────────────────────────────
+  const handleWonderClick = useCallback(() => {
+    if (todaysWonder) {
+      // Extract the question part (before the "?" and add "?")
+      const questionPart = todaysWonder.includes("?")
+        ? todaysWonder.substring(0, todaysWonder.lastIndexOf("?") + 1)
+        : todaysWonder;
+      setQuestion(questionPart);
+      submitWithQuestion(questionPart, { forceNewConversation: true });
+      setWonderDismissed(true);
+      sessionStorage.setItem("ds-wonder-dismissed", new Date().toDateString());
+    }
+  }, [todaysWonder, submitWithQuestion]);
 
   // ── Speech input ─────────────────────────────────────────────────────────────
   const handleSpeechResult = useCallback(
@@ -410,7 +552,7 @@ export default function Home() {
   const sections    = answer ? parseAnswerSections(answer, language) : [];
   const subjectMeta = subject ? (SUBJECT_META[subject] ?? SUBJECT_META["general"]!) : null;
   const hasAnswer   = !loading && answer.trim().length > 0;
-  const isYoungAge  = age <= 7;
+  const isYoungAge  = age <= 9;
   const pendingBadgeDef = pendingBadge ? (BADGE_DEFS[pendingBadge] ?? null) : null;
   const weeklySummaryData = showWeekly ? getWeeklySummary() : null;
 
@@ -489,6 +631,41 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Today's Wonder */}
+          {todaysWonder && !wonderDismissed && !answer && (
+            <button
+              type="button"
+              onClick={handleWonderClick}
+              className="w-full text-left p-3.5 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 shadow-sm hover:shadow-md transition group"
+            >
+              <p className="text-xs font-semibold text-amber-600 mb-1">
+                ✨ {language === "hi" ? "आज का सवाल" : "Today's Wonder"}
+              </p>
+              <p className="text-sm text-gray-800 leading-snug group-hover:text-indigo-700 transition">
+                {todaysWonder}
+              </p>
+              <p className="text-xs text-amber-500 mt-1.5">
+                {language === "hi" ? "जानने के लिए टैप करो! 👆" : "Tap to find out! 👆"}
+              </p>
+            </button>
+          )}
+
+          {/* Conversation indicator + New question button */}
+          {conversationHistory.length > 2 && (
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-indigo-500 font-medium">
+                🔗 {language === "hi" ? "बातचीत जारी" : "Conversation"} ({Math.floor(conversationHistory.length / 2)} {language === "hi" ? "सवाल" : "turns"})
+              </span>
+              <button
+                type="button"
+                onClick={handleNewConversation}
+                className="text-xs px-3 py-1 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 transition"
+              >
+                ✨ {language === "hi" ? "नया सवाल" : "New question"}
+              </button>
+            </div>
+          )}
+
           {/* Question input */}
           <form onSubmit={handleSubmit} className="flex gap-2 items-stretch">
             <input
@@ -517,7 +694,35 @@ export default function Home() {
                 🎤
               </button>
             )}
+            {/* Camera / OCR button */}
+            <button
+              type="button"
+              onClick={() => cameraInputRef.current?.click()}
+              disabled={ocrLoading}
+              className={`shrink-0 w-12 sm:w-14 rounded-xl text-white text-lg flex items-center justify-center shadow-sm transition ${
+                ocrLoading ? "bg-gray-400" : "bg-teal-500 hover:bg-teal-600"
+              }`}
+              aria-label={language === "hi" ? "किताब का फोटो लो" : "Photo of textbook"}
+              title={language === "hi" ? "किताब का फोटो लो" : "Photo of textbook"}
+            >
+              {ocrLoading ? "⏳" : "📷"}
+            </button>
+            <input
+              ref={cameraInputRef}
+              type="file"
+              accept="image/*"
+              capture="environment"
+              onChange={handleCameraCapture}
+              className="hidden"
+            />
           </form>
+
+          {/* OCR loading indicator */}
+          {ocrLoading && (
+            <p className="text-teal-600 text-xs text-center animate-pulse">
+              {language === "hi" ? "📷 फोटो पढ़ रहा हूँ…" : "📷 Reading your photo…"}
+            </p>
+          )}
 
           {/* ── Answer area ────────────────────────────────────────────── */}
 

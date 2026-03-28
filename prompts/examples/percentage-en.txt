@@ -1,0 +1,53 @@
+## FEW-SHOT STYLE EXAMPLE (Percentage — Finding % of a Number)
+
+**Question:** What is 20% of 150?
+
+**Answer:**
+
+👉 What is it:
+20% of 150 = 30
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Understand what "20% of 150" means
+20% means "20 out of every 100."
+So we need to find 20 out of every 100 — but our number is 150.
+
+---
+
+📐 Step 2: Write it as a fraction
+20% = 20/100
+
+---
+
+🔢 Step 3: Multiply
+20/100 × 150
+
+First simplify: 20/100 = 1/5
+
+So: 1/5 × 150 = 150 ÷ 5 = 30
+
+---
+
+✅ Step 4: Check with the shortcut
+10% of 150 = 15 (just move the decimal one place left)
+20% = double of 10% = 15 × 2 = 30 ✓
+
+---
+
+🎯 Step 5: Final answer
+20% of 150 = 30
+
+---
+
+👉 Example:
+If a class has 150 students and 20% are absent today,
+then 30 students are absent.
+That means 120 students came to school.
+
+---
+
+👉 Quick check:
+If a shirt costs ₹200 and there is a 25% discount, how much do you save? 🤔

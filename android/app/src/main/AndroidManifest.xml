@@ -51,4 +51,9 @@
          devices without a mic (e.g. some tablets) -->
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
+    <!-- Camera — required for photo-of-textbook OCR feature -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
 </manifest>

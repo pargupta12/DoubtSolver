@@ -1,0 +1,43 @@
+## FEW-SHOT STYLE EXAMPLE (Measurement — Unit Conversion)
+
+**Question:** Convert 3 km 500 m to metres.
+
+**Answer:**
+
+👉 What is it:
+3 km 500 m = 3500 metres
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Know the conversion
+1 km = 1000 m
+
+---
+
+🔢 Step 2: Convert the km part to metres
+3 km = 3 × 1000 = 3000 m
+
+---
+
+➕ Step 3: Add the extra metres
+3000 m + 500 m = 3500 m
+
+---
+
+🎯 Step 4: Final answer
+3 km 500 m = 3500 m
+
+---
+
+👉 Example:
+Think of a long road.
+If you walk 3 full kilometres, that is 3000 metres.
+Then you walk 500 metres more.
+In total you walked 3500 metres.
+
+---
+
+👉 Quick check:
+How many metres is 2 km 250 m? 🤔

@@ -1,44 +1,68 @@
 {
   "science": {
-    "name": "Science/Nature",
-    "analogyDomain": "Kitchen, garden, body, weather",
-    "howItWorks": "Machines, factories, recipes—how things mix, grow, or move",
-    "exampleHook": "Think of it like a kitchen where..."
-  },
-  "environment": {
-    "name": "Environment/Earth Care",
-    "analogyDomain": "Home we share, garden we take care of",
-    "howItWorks": "Caring, sharing, protecting—how we look after our planet together",
-    "exampleHook": "Think of Earth like our big home. When we..."
-  },
-  "technology": {
-    "name": "Technology",
-    "analogyDomain": "Delivery, mail, games",
-    "howItWorks": "Sending, receiving, rules—how things get sent and follow rules",
-    "exampleHook": "It's like sending a letter, but..."
-  },
-  "english": {
-    "name": "English/Grammar",
-    "analogyDomain": "Building blocks, recipe",
-    "howItWorks": "Parts fitting together—how words and rules fit",
-    "exampleHook": "Words are like Lego pieces. When you..."
-  },
-  "geography": {
-    "name": "Geography",
-    "analogyDomain": "Map, journey, neighborhood, world as a big house",
-    "howItWorks": "Places, distances, connections—where things are and how they fit together",
-    "exampleHook": "Picture the world like a big map. When you..."
+    "name": "Science / Nature",
+    "analogyDomain": "Kitchen, garden, body, weather — things the child can see, touch, or feel",
+    "howItWorks": "Input → transformation → output. Always explain the MECHANISM, not just the name.",
+    "exampleHook": "Use everyday observations: ice melting, leaves turning yellow, breathing faster after running."
   },
   "history": {
     "name": "History",
-    "analogyDomain": "Story with characters, long ago",
-    "howItWorks": "Cause and effect, people's choices—how people lived and what happened",
-    "exampleHook": "Imagine a boy/girl who lived long ago..."
+    "analogyDomain": "Human story with real people making real choices under real pressure",
+    "howItWorks": "Root cause → turning point → outcome. Lead with PEOPLE, not abstract forces.",
+    "exampleHook": "One specific moment or person that shows the big event in miniature."
+  },
+  "geography": {
+    "name": "Geography",
+    "analogyDomain": "Map, journey, physical world — where things are and WHY they are there",
+    "howItWorks": "Physical feature → human consequence. Always use compass directions (N/S/E/W).",
+    "exampleHook": "Connect rivers/mountains/coasts to how people farm, trade, or build cities there."
+  },
+  "english": {
+    "name": "English / Grammar",
+    "analogyDomain": "Building blocks, recipe — parts fitting together to make meaning",
+    "howItWorks": "Show the WRONG version first (the confusion), then the rule that fixes it.",
+    "exampleHook": "Use a pair: bad sentence → good sentence. Let the contrast teach."
+  },
+  "technology": {
+    "name": "Technology / Computers",
+    "analogyDomain": "Postal system, recipe, brain — physical-world analogies for digital concepts",
+    "howItWorks": "Problem it solves → how it solves it (input → process → output).",
+    "exampleHook": "Use something the child already uses: WhatsApp message, Google search, GPS."
+  },
+  "environment": {
+    "name": "Environment / Earth Science",
+    "analogyDomain": "Our shared home — interconnected systems where every change has consequences",
+    "howItWorks": "Human action → change in natural system → consequence for living things.",
+    "exampleHook": "A local Indian example first (Ganga, Himalayan glaciers, Indian forests)."
+  },
+  "gk": {
+    "name": "General Knowledge",
+    "analogyDomain": "Facts with memory hooks — comparisons, surprises, connections to daily life",
+    "howItWorks": "State the fact → give ONE memorable hook (comparison, surprise, or connection).",
+    "exampleHook": "Pacific Ocean = all land on Earth fits inside it. Sun = 8 minutes for light to reach us."
+  },
+  "civics": {
+    "name": "Civics / Social Studies",
+    "analogyDomain": "School rules → city rules → country laws. Fairness, rights, shared decisions.",
+    "howItWorks": "Connect to child's life first, then zoom out to government. Three-job framework (make/run/check laws).",
+    "exampleHook": "Right to Education Act: before it, millions couldn't go to school. After it, every child can."
+  },
+  "health": {
+    "name": "Health & Nutrition",
+    "analogyDomain": "The child's own body right now — fuel, building blocks, protection tools",
+    "howItWorks": "What goes in → what the body does with it → what the result is. Always connect to feelings.",
+    "exampleHook": "Things the child has felt: hunger, tiredness after exercise, a cut healing, feeling full."
+  },
+  "sports": {
+    "name": "Sports",
+    "analogyDomain": "Rules as solutions to problems — strategy, technique, and the science behind performance",
+    "howItWorks": "Why the rule exists + what would happen without it + how it shapes the game.",
+    "exampleHook": "India-first: cricket, kabaddi, hockey, badminton. Use a famous real moment."
   },
   "general": {
     "name": "General",
-    "analogyDomain": "Games, sports, family life",
-    "howItWorks": "Everyday actions—how things work in daily life",
-    "exampleHook": "It's like when you play..."
+    "analogyDomain": "Games, sports, family life — how everyday things work",
+    "howItWorks": "Everyday actions — how things work in daily life",
+    "exampleHook": "Use something from the child's daily experience."
   }
 }

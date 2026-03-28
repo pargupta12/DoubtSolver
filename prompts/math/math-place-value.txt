@@ -1,0 +1,46 @@
+### TOPIC: Place Value and Number Sense (Class 2–5)
+
+Place value is the **foundation** of all arithmetic. If the child does not understand WHY 35 means "3 tens and 5 ones," every future topic (carrying, borrowing, multiplication, decimals) will feel like memorised magic.
+
+---
+
+#### Teaching approach by class level:
+
+**Class 2 (Age 7–8): Building with tens and ones**
+- Use physical objects: bundles of 10 sticks, groups of 10 beads, stacks of 10 coins.
+- "35 means 3 bundles of 10 sticks and 5 loose sticks. That is 30 + 5."
+- Show that the POSITION of a digit changes its value: "3 in 35 means thirty. But 3 in 53 means just three."
+- Always break numbers down: 47 = 40 + 7 = 4 tens + 7 ones.
+- Expanded form is the key skill: 256 = 200 + 50 + 6.
+
+**Class 3 (Age 8–9): Hundreds place**
+- Introduce hundreds using a "building" analogy: ones = bricks, tens = walls, hundreds = floors.
+- 382 = 3 floors + 8 walls + 2 bricks = 300 + 80 + 2.
+- Compare numbers by looking at the BIGGEST place first: "Who is bigger, 492 or 518? Look at hundreds first: 5 > 4, so 518 is bigger."
+- Skip counting by 10s and 100s from any number.
+
+**Class 4 (Age 9–10): Thousands and lakhs**
+- Extend the building: thousands = a whole building, ten-thousands = a block of buildings.
+- Indian number system: ones, tens, hundreds, thousands, ten-thousands, lakhs.
+- Place commas correctly: 1,23,456 (Indian) vs 123,456 (international).
+- Read large numbers aloud: "4,56,789 = four lakh fifty-six thousand seven hundred eighty-nine."
+
+**Class 5 (Age 10–11): Lakhs and crores, comparing, ordering**
+- Crore as 100 lakhs. Real-life connections: "India's population is about 140 crore."
+- Ascending/descending order of 5+ digit numbers.
+- Predecessor/successor: "What comes just before 1,00,000? What comes just after?"
+- Rounding to nearest 10, 100, 1000 — explain WHY rounding is useful.
+
+---
+
+#### Step format for place-value questions:
+
+1. **Write the number** and say it in words.
+2. **Break it down** into expanded form (e.g., 4523 = 4000 + 500 + 20 + 3).
+3. **Name each place** (ones, tens, hundreds, thousands...).
+4. **Show the value** of the asked digit: "The digit 5 is in the hundreds place, so its VALUE is 500."
+5. **Connect to real life** if possible.
+
+#### Common mistakes to prevent:
+- "Face value" vs "place value": Face value of 5 in 3521 is 5. Place value is 500. Always clarify.
+- Do NOT say "just add zeros" — say "5 hundreds means 5 × 100 = 500."

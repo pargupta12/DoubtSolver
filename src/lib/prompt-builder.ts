@@ -26,11 +26,38 @@ function readPromptFile(relativePath: string): string {
   return promptFileCache.get(relativePath)!;
 }
 
+// ── Subject overlay ────────────────────────────────────────────────────────────
+// Each subject has a dedicated prompts/subjects/<subject>.txt file with
+// age-aware, category-specific teaching rules. Falls back to a compact
+// inline hint for subjects that have no overlay file yet.
+
+const SUBJECT_OVERLAY_FALLBACK: Record<string, string> = {
+  general: "## Subject: General\nUse everyday examples from games, sports, and family life. Keep it relatable and practical.",
+  math:    "", // math uses its own block — never inject the subject overlay for math
+};
+
+function buildSubjectInstructions(subject: string): string {
+  if (subject === "math") return ""; // math has its own dedicated rules block
+  const overlayPath = `subjects/${subject}.txt`;
+  try {
+    return readPromptFile(overlayPath);
+  } catch {
+    return SUBJECT_OVERLAY_FALLBACK[subject] ?? `## Subject: ${subject}\nTeach with clear examples appropriate to this subject.`;
+  }
+}
+
 const TOPIC_TO_MATH_FRAGMENT: Record<MathTopic, string> = {
-  fractions_add_sub: "math/math-fractions-add-sub.txt",
-  whole_ops: "math/math-whole-ops.txt",
-  word_problem: "math/math-word-problems.txt",
-  general: "math/math-general.txt",
+  fractions_add_sub:  "math/math-fractions-add-sub.txt",
+  fractions_concepts: "math/math-fractions-concepts.txt",
+  whole_ops:          "math/math-whole-ops.txt",
+  word_problem:       "math/math-word-problems.txt",
+  geometry:           "math/math-geometry.txt",
+  measurement:        "math/math-measurement.txt",
+  decimals:           "math/math-decimals.txt",
+  percentage:         "math/math-percentage.txt",
+  patterns:           "math/math-patterns.txt",
+  place_value:        "math/math-place-value.txt",
+  general:            "math/math-general.txt",
 };
 
 function fewShotRelativePath(
@@ -56,7 +83,14 @@ function fewShotRelativePath(
     };
     return map[flavor];
   }
-  return "examples/addition-carry-en.txt";
+  // New topics use dedicated few-shots if they exist, else multiplication (good generic step example)
+  if (topic === "geometry")           return "examples/geometry-en.txt";
+  if (topic === "decimals")           return "examples/decimals-en.txt";
+  if (topic === "percentage")         return "examples/percentage-en.txt";
+  if (topic === "fractions_concepts") return "examples/fraction-add-en.txt";
+  if (topic === "measurement")        return "examples/measurement-en.txt";
+  // patterns, place_value, general — use a solid step-by-step example
+  return "examples/multiplication-groups-en.txt";
 }
 
 function buildMathTeachingRulesBlock(
@@ -91,8 +125,7 @@ function getMasterPrompt(): string {
 }
 
 export function getAgeBand(age: number): string {
-  if (age <= 7)  return "6-7";
-  if (age <= 9)  return "8-9";
+  if (age <= 9)  return "6-9";
   if (age <= 11) return "10-11";
   return "12-15";
 }
@@ -101,11 +134,8 @@ function getLanguageInstructions(lang: AppLanguage, ageBand: string): string {
   const cacheKey = `${lang}-${ageBand}`;
   if (languageFragmentCache.has(cacheKey)) return languageFragmentCache.get(cacheKey)!;
 
-  // Age 6-7 gets a special story-framing file; all older ages use the standard file
-  const isYoung = ageBand === "6-7";
-  const fileName = lang === "en"
-    ? (isYoung ? "language-en-young.txt" : "language-en.txt")
-    : (isYoung ? "language-hi-young.txt" : "language-hi.txt");
+  // All age bands use the standard language file
+  const fileName = lang === "en" ? "language-en.txt" : "language-hi.txt";
 
   const text = readFileSync(join(PROMPTS_DIR, fileName), "utf-8").trim();
   languageFragmentCache.set(cacheKey, text);
@@ -127,11 +157,13 @@ export function buildPrompt(
   const masterPrompt = getMasterPrompt();
   const languageInstructions = getLanguageInstructions(language, ageBand);
   const mathTeachingRules = buildMathTeachingRulesBlock(question, childAge, language);
+  const subjectInstructions = buildSubjectInstructions(subject);
   const safeQuestion = sanitizeUserInput(question);
 
   return masterPrompt
     .replace(/\{language_instructions\}/g, languageInstructions)
     .replace(/\{math_teaching_rules\}/g, mathTeachingRules)
+    .replace(/\{subject_instructions\}/g, subjectInstructions)
     .replace(/\{user_question\}/g, safeQuestion)
     .replace(/\{detected_subject\}/g, subject)
     .replace(/\{child_age\}/g, String(childAge));
@@ -151,11 +183,13 @@ export function buildSystemPrompt(
   const masterPrompt = getMasterPrompt();
   const languageInstructions = getLanguageInstructions(language, ageBand);
   const mathTeachingRules = buildMathTeachingRulesBlock(question, childAge, language);
+  const subjectInstructions = buildSubjectInstructions(subject);
   const safeQuestion = sanitizeUserInput(question);
 
   const filled = masterPrompt
     .replace(/\{language_instructions\}/g, languageInstructions)
     .replace(/\{math_teaching_rules\}/g, mathTeachingRules)
+    .replace(/\{subject_instructions\}/g, subjectInstructions)
     .replace(/\{detected_subject\}/g, subject)
     .replace(/\{child_age\}/g, String(childAge));
 

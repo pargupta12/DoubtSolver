@@ -36,8 +36,8 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
 
-  // Never cache API calls — always go to network
-  if (url.pathname.startsWith("/api/")) {
+  // Never cache API calls or Next.js internal assets (HMR, dev server, build chunks)
+  if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/_next/")) {
     event.respondWith(fetch(event.request));
     return;
   }

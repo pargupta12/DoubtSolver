@@ -1,0 +1,59 @@
+### TOPIC: Patterns, Sequences, and Number Properties (Class 2–6)
+
+Patterns teach children to THINK AHEAD — to see the rule, predict the next number, and understand that math has structure, not just random rules.
+
+---
+
+#### Teaching approach by class level:
+
+**Class 2 (Age 7–8): Simple repeating patterns**
+- Visual patterns: 🔴🔵🔴🔵🔴 → "What comes next? 🔵!"
+- Number patterns: 2, 4, 6, 8, __ → "We add 2 each time. Next is 10."
+- Skip counting: count by 2s, 5s, 10s. This IS multiplication in disguise.
+- Odd and even: "Even numbers can be split into two equal groups. Odd numbers have one left over."
+
+**Class 3 (Age 8–9): Growing patterns + multiplication tables**
+- Patterns like: 5, 10, 15, 20 → "The table of 5!"
+- "Every pattern has a RULE. Find the rule and you can predict any number in the pattern."
+- Increasing/decreasing: 100, 90, 80, 70 → "Subtract 10 each time."
+- Even + Even = Even. Odd + Odd = Even. Even + Odd = Odd. Show with examples.
+
+**Class 4 (Age 9–10): Multiples and factors**
+- Multiples: "Multiples of 3 are: 3, 6, 9, 12, 15... They are the answers in the 3 times table."
+- Factors: "Factors of 12 are numbers that divide 12 exactly: 1, 2, 3, 4, 6, 12."
+- Use factor pairs: "1×12, 2×6, 3×4 — these give all factors of 12."
+- Common multiples: "Common multiples of 3 and 4 are: 12, 24, 36... The smallest is 12 (the LCM)."
+
+**Class 5 (Age 10–11): LCM, HCF, prime numbers**
+- Prime numbers: "A prime number has exactly 2 factors — 1 and itself. 2, 3, 5, 7, 11, 13..."
+- Composite numbers: "Composite numbers have more than 2 factors. 4, 6, 8, 9, 10..."
+- 1 is neither prime nor composite. 2 is the only even prime.
+- HCF (Highest Common Factor): list factors of both numbers, find the largest common one.
+- LCM (Lowest Common Multiple): list multiples of both numbers, find the smallest common one.
+- Prime factorisation: break a number into a product of primes. "36 = 2 × 2 × 3 × 3."
+
+**Class 6 (Age 11–12): Divisibility rules and advanced patterns**
+- Divisibility rules: by 2 (last digit even), by 3 (sum of digits ÷ 3), by 5 (ends in 0 or 5), by 9 (sum of digits ÷ 9), by 10 (ends in 0).
+- Finding LCM and HCF using prime factorisation.
+- Number sequences with more complex rules: square numbers (1, 4, 9, 16, 25...), triangular numbers (1, 3, 6, 10, 15...).
+
+---
+
+#### Step format for pattern/sequence questions:
+
+1. **Write out the pattern** — list the numbers or shapes clearly.
+2. **Find the rule**: "What changes each time? Is it +2, ×3, −5?" Show the gap between each pair.
+3. **State the rule** in one clear sentence.
+4. **Apply the rule** to find the next number(s).
+5. **Check**: "Does the rule work for ALL the given numbers? Let me verify."
+
+#### For LCM/HCF questions:
+1. **List multiples** (for LCM) or **list factors** (for HCF) of both numbers.
+2. **Circle the common ones**.
+3. **Pick the smallest common multiple** (LCM) or **largest common factor** (HCF).
+4. **Real-life connection**: LCM = "When will both buses arrive at the same time again?" HCF = "What is the biggest piece size that divides both ribbons equally?"
+
+#### Common mistakes to prevent:
+- 1 is NOT prime. Emphasise: "Prime numbers have EXACTLY two factors."
+- LCM ≥ both numbers. HCF ≤ both numbers. If the answer violates this, it is wrong.
+- "0 is even" — yes it is! It can be split into two equal groups of 0.

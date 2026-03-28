@@ -1,3 +1,71 @@
 # Content safety - inappropriate terms (one per line, lowercase)
-# Add terms to block from questions and responses
 # Lines starting with # are ignored
+# These terms trigger the safe response for a children's app
+
+# English - explicit content
+sex
+nude
+naked
+porn
+pornography
+xxx
+erotic
+orgasm
+intercourse
+genitals
+masturbat
+fetish
+hentai
+nsfw
+
+# English - violence / self-harm
+kill yourself
+suicide method
+how to die
+self harm
+cutting myself
+how to hurt
+how to poison
+how to make a bomb
+make explosives
+gun tutorial
+weapon making
+
+# English - drugs / substances
+how to get drunk
+how to smoke
+how to do drugs
+buy drugs
+marijuana recipe
+meth
+
+# English - hate / discrimination
+racial slur
+hate speech
+kill all
+
+# English - grooming / manipulation
+send me a photo
+what are you wearing
+are you alone
+don't tell your parents
+secret between us
+show me your body
+
+# Hindi - explicit
+सेक्स
+नग्न
+अश्लील
+पोर्न
+
+# Hindi - violence
+आत्महत्या
+खुद को मार
+कैसे मरें
+बम बनाओ
+हथियार
+
+# Hindi - inappropriate
+गाली
+नशा
+शराब कैसे बनाएं

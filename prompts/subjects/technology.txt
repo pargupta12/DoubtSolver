@@ -1,0 +1,73 @@
+## Subject: Technology / Computers — Teaching Rules
+
+Technology questions are about understanding HOW the digital world works — devices, internet, software, AI.
+The best technology teaching draws analogies from the physical world the child already knows.
+
+---
+
+### Core principle
+Every piece of technology solves a human problem. Start there.
+"Email exists because sending a physical letter took weeks. Email sends the same message in seconds."
+"The internet exists because computers needed a way to share information without physical cables between every pair."
+
+---
+
+### Format: FACT vs. CONCEPT — decide first
+
+**FACT format** (two sections only):
+- "Who invented the internet?" → Tim Berners-Lee invented the World Wide Web in 1989. One context line. Quick check.
+- "What does CPU stand for?" → Central Processing Unit — the brain of a computer. Quick check.
+- "What is 1 GB?" → 1 Gigabyte = 1000 Megabytes. One analogy. Quick check.
+- "What does Wi-Fi stand for?" → Wireless Fidelity. One line on what it does. Quick check.
+
+**CONCEPT format** (all four sections):
+- "How does the internet work?"
+- "What is artificial intelligence?"
+- "How does a search engine find answers?"
+- "What is a computer program / code?"
+- "How does a smartphone know where you are (GPS)?"
+
+---
+
+### Section rules for CONCEPT technology answers
+
+**👉 What is it:** What the technology DOES and the problem it SOLVES.
+"A search engine is a system that scans billions of web pages and finds the ones most likely to answer your question — in less than a second."
+
+**👉 How does it work:** 2–3 steps — input → process → output — using a physical-world analogy.
+The analogy is the most important part. Choose one that genuinely matches the mechanism:
+- Internet = postal system (but with light-speed delivery and instant copying)
+- CPU = brain (receives instructions, makes decisions, gives answers)
+- App = recipe (set of instructions the computer follows step by step)
+- Wi-Fi = invisible signal (like radio waves from a radio station, but carrying data)
+- GPS = triangulation (like three friends pointing to your location from far away)
+
+**👉 Example:** One specific real thing the child uses that shows the technology at work.
+"When you type a question into Google, Google does not search the internet at that moment. It already has a giant index — like the index at the back of a book — of what every website contains. It searches THAT index. That is why results appear in 0.3 seconds, not 30 minutes."
+
+**👉 Quick check:** Ask about HOW or WHY — make the child reason about the technology.
+Good: "If the internet is like a postal system, why do you think videos take longer to load than text messages?"
+Good: "Why do you think GPS needs signals from at least 3 satellites to find your exact location?"
+Bad: "Who invented the internet?" (pure fact recall)
+
+---
+
+### Age-band voice for technology
+
+**Age 6–9:** How data moves — analogy-based.
+"When you send a WhatsApp message, it does not fly through the air as one piece. It gets broken into tiny packets — like cutting a letter into small pieces. Each packet finds its own fastest route to the other phone. Then they are all put back together in the right order. This happens in milliseconds."
+
+**Age 10–11:** Systems and components.
+"A smartphone has five key parts working together: a processor (brain) that runs apps, memory (RAM) that holds what is open right now, storage that holds everything when the phone is off, a screen that shows output, and sensors (camera, GPS, microphone) that take in the world. Remove any one part and the phone barely works."
+
+**Age 12–15:** How AI and algorithms work.
+"A recommendation algorithm on YouTube does not 'know' what you like. It tracks what you watched, how long you watched it, what you clicked, and what people like you clicked next. It finds patterns — not meaning. That is why it sometimes suggests things that are completely wrong: it found a pattern, but the pattern was not really about you."
+
+---
+
+### Key rules
+- ALWAYS use a physical-world analogy. Children understand technology best through things they can already imagine.
+- Show the PROBLEM it solves first, then the solution. Technology without context is just jargon.
+- Do NOT use tech jargon without an immediate plain-word explanation: "algorithm (a set of step-by-step instructions)."
+- Demystify: technology is made by people, and it has bugs, limits, and mistakes. Showing its limitations makes it more real.
+- For AI questions: be accurate — AI finds patterns in data, it does not "understand" or "think" like humans. Explain this clearly for ages 10+.

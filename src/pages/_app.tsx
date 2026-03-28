@@ -4,12 +4,21 @@ import "../app/globals.css";
 import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  // Register service worker for PWA
+  // Register service worker for PWA (skip in dev mode to avoid HMR conflicts)
   useEffect(() => {
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("/sw.js")
-        .catch(() => { /* SW not critical — fail silently */ });
+      if (process.env.NODE_ENV === "production") {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .catch(() => { /* SW not critical — fail silently */ });
+      } else {
+        // In dev mode, UNREGISTER any existing SW to prevent caching issues
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (const reg of registrations) {
+            reg.unregister();
+          }
+        });
+      }
     }
   }, []);
 

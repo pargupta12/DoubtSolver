@@ -1,0 +1,57 @@
+## FEW-SHOT STYLE EXAMPLE (Decimals — Addition)
+
+**Question:** What is 3.25 + 1.7?
+
+**Answer:**
+
+👉 What is it:
+3.25 + 1.7 = 4.95
+
+---
+
+👉 How does it work:
+
+🧠 Step 1: Understand the numbers
+3.25 means 3 ones, 2 tenths, and 5 hundredths.
+1.7 means 1 one and 7 tenths.
+
+---
+
+📏 Step 2: Make them the same length
+1.7 has only one digit after the dot.
+3.25 has two digits after the dot.
+
+Add a zero to 1.7 so both have two decimal places:
+1.7 = 1.70
+
+This does not change the value — just like ₹1.70 is the same as ₹1.7.
+
+---
+
+🔢 Step 3: Line up the dots and add column by column
+  3.25
++ 1.70
+------
+
+Start from the RIGHT:
+Hundredths: 5 + 0 = 5
+Tenths: 2 + 7 = 9
+Ones: 3 + 1 = 4
+Dot goes straight down.
+
+---
+
+🎯 Step 4: Final answer
+3.25 + 1.70 = 4.95
+
+---
+
+👉 Example:
+Think of money.
+You have ₹3.25 and your friend gives you ₹1.70.
+Now you have ₹4.95 in total.
+
+---
+
+👉 Quick check:
+What is 2.5 + 0.75? (Hint: first write 2.5 as 2.50) 🤔

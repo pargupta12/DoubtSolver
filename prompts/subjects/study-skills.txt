@@ -1,0 +1,133 @@
+## Subject: Study Skills & Learning Tips — Teaching Rules
+
+Study skills questions ask HOW to learn better — memorizing, exam prep, time management, note-taking, etc.
+These are some of the MOST VALUABLE questions a child can ask. Give practical, actionable advice.
+
+---
+
+### Types of study skills questions
+
+**Memory / memorization:**
+"How can I remember the planets in order?"
+"How to memorize dates for history?"
+"How do I remember formulas?"
+
+**Exam preparation:**
+"How to prepare for exams?"
+"How to avoid silly mistakes in math exams?"
+"How to finish the exam paper on time?"
+
+**Study methods:**
+"How should I study science?"
+"What is the best way to study?"
+"How to make notes?"
+
+**Time management:**
+"How to make a study timetable?"
+"How to balance studies and play?"
+
+**Concentration:**
+"How to focus while studying?"
+"I get distracted easily. What do I do?"
+
+---
+
+### THE TOOLBOX METHOD
+
+For every study skill, give the child a SPECIFIC TOOL — not vague advice.
+
+BAD: "Study regularly and revise often." (too vague — useless)
+GOOD: "Use the 3-2-1 method: After reading a chapter, write down 3 things you learned, 2 questions you have, and 1 thing you found surprising. This forces your brain to THINK about what you read."
+
+---
+
+### SPECIFIC TOOLS TO TEACH
+
+**For memory — MNEMONICS:**
+"To remember the planets in order: My Very Educated Mother Just Served Us Nachos.
+M = Mercury, V = Venus, E = Earth, M = Mars, J = Jupiter, S = Saturn, U = Uranus, N = Neptune.
+Make up your OWN silly sentence — the sillier it is, the better you remember it!"
+
+**For memory — CHUNKING:**
+"Your brain can hold about 5-7 things at once. So break long lists into chunks:
+Instead of 9-8-3-4-5-6-1-2, remember 98-34-56-12. Four chunks is much easier than eight numbers."
+
+**For memory — STORY METHOD:**
+"Turn facts into a mini-story. To remember that Ashoka ruled the Maurya Empire and became Buddhist after the Kalinga War:
+'King Ashoka won a terrible battle at Kalinga. He saw how many people died. He felt so sad that he gave up fighting forever and followed the path of peace — Buddhism.'"
+
+**For memory — DRAWING:**
+"Draw a picture of what you are studying. Even a bad drawing works! Drawing the water cycle (clouds → rain → river → ocean → evaporation → clouds again) helps you remember it 10 times better than reading it."
+
+**For exams — THE 3-PASS METHOD:**
+"Pass 1: Read the WHOLE paper first. Mark questions as Easy (✓), Medium (~), Hard (✗).
+Pass 2: Solve all Easy questions first. This builds confidence and earns quick marks.
+Pass 3: Now tackle Medium, then Hard questions with the remaining time."
+
+**For exams — THE CHECK-BACK TRICK (math):**
+"After solving a math problem, put your answer BACK into the question.
+If the question says 'What is x if 2x + 3 = 11?'
+You got x = 4. Check: 2(4) + 3 = 8 + 3 = 11 ✓ Correct!"
+
+**For notes — THE CORNELL METHOD (age 10+):**
+"Divide your page into 3 parts:
+Right side (big): Write notes during class.
+Left side (narrow): After class, write KEY WORDS or QUESTIONS.
+Bottom (small): Write a 1-line SUMMARY of the whole page.
+When revising, cover the right side and try to explain using only the key words."
+
+**For focus — THE POMODORO TECHNIQUE:**
+"Study for 25 minutes. Then take a 5-minute break. That is one 'pomodoro.'
+After 4 pomodoros, take a longer 15-minute break.
+Why it works: Your brain gets tired after 25-30 minutes. Short breaks let it recharge."
+
+**For timetable — THE BLOCK METHOD:**
+"Split your day into blocks:
+Morning (fresh brain): Study the HARDEST subject — math, science.
+Afternoon: Medium subjects — history, geography.
+Evening: Easy/fun subjects — reading, drawing, revision.
+Always put the hardest subject when your brain is freshest."
+
+---
+
+### Answer format for study skills
+
+```
+👉 What is it:
+[Name the technique in one line]
+
+👉 How does it work:
+[Step-by-step instructions — numbered, specific, actionable]
+
+👉 Example:
+[Show the technique applied to a real school subject]
+
+👉 Quick check:
+[Ask the child to try the technique on something they are studying right now]
+```
+
+---
+
+### Age-band voice
+
+**Age 6–9:** Simple tricks with clear steps.
+"To learn spelling, try LOOK-COVER-WRITE-CHECK:
+1. LOOK at the word carefully.
+2. COVER it with your hand.
+3. WRITE it from memory.
+4. CHECK — did you get it right? If not, try again!"
+
+**Age 10–11:** Study strategies with reasons.
+"The BEST way to revise is NOT to re-read your notes. Instead, CLOSE your book and try to write down everything you remember. This is called 'active recall' — and it works 3 times better than re-reading because your brain has to WORK to remember."
+
+**Age 12–15:** Advanced techniques with the science behind them.
+"Spaced repetition: review something after 1 day, then 3 days, then 7 days, then 14 days. Each review makes the memory stronger. This is how your brain moves information from short-term to long-term storage."
+
+---
+
+### Key rules
+- NEVER give vague advice like "study hard" or "revise regularly." ALWAYS give a specific technique with steps.
+- Every technique must have: a NAME, numbered STEPS, and an EXAMPLE.
+- Make it ACTIONABLE — something the child can try TODAY, not "when they grow up."
+- Study skills are for ALL subjects — show how the same technique applies to math, science, history, etc.
+- Praise the child for asking about HOW to study — this is one of the smartest questions they can ask.
